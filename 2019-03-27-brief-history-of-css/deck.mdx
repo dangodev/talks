@@ -1,0 +1,119 @@
+import { Head, Image, Notes } from 'mdx-deck'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+export { theme } from './theme'
+import DefaultLayout from './components/Default';
+import Invert from './components/Invert';
+import TitleCard from './components/TitleCard';
+
+export default TitleCard;
+
+---
+export default Invert;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+### Warning
+
+I probably stole ideas from the following people:
+
+- Nicole Sullivan
+- Rachel Andrew
+- Jonathan Snook
+- Vladimir Starkov
+- Chris Coyier
+- Ethan Marcotte
+- Matt Marquis
+- Nick Walsh
+- Drew Barontini
+- Dan Denney
+
+---
+export default Invert;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+### Warning
+
+I probably also forgot what the previous people said<br/>
+and mixed in my own ideas
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+# Chapter 1
+
+## The blue button problem
+
+<Notes>
+To illustrate the challenge of why CSS is so hard, I’m going to walk you
+through “the blue button problem.” As said before, this is not my idea;
+I’ve stolen it from CSS people smarter than me. But I’ve never heard it
+named, so I’m giving it a name and retelling it in my own way.
+
+Say you have a button.
+</Notes>
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+<Image src="./assets/btn-next.png" size="contain" height="20vh" width="100vw" />
+
+<Notes>
+(describe the button in 4–5 properties)
+
+Not a big deal to style it.
+</Notes>
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+<Image src="./assets/btn-next.png" size="contain" height="20vh" width="100vw" />
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.btn {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  color: #333333;
+  padding: 11px 19px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}`}</SyntaxHighlighter>
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+<Image src="./assets/btn-download.png" size="contain" height="20vh" width="100vw" />
+
+<Notes>
+Encountered another button, same styles. cool.
+</Notes>
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+<Image src="./assets/btn-download.png" size="contain" height="20vh" width="100vw" />
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.btn      😎👍`}</SyntaxHighlighter>
+
+---
+export default DefaultLayout;
+
+<Head><title>● ○ ○ ○ ○</title></Head>
+
+<Image src="./assets/btn-blue.png" size="contain" height="20vh" width="100vw" />
+
+<Notes>
+Uh oh.
+</Notes>
+
+---
