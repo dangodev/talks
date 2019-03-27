@@ -646,11 +646,19 @@ blue becomes more than a descriptor.<br />
 It becomes an alternate version of the same component.
 
 <Notes>
-  You’re probably thinking “duh,” because component thinking is so commonplace
-  now. But it wasn’t back then.
+You’re probably thinking “duh,” because component thinking is so commonplace
+now. But it wasn’t back then. At least not in terms of front-end.
 
-It still might not be obvious to some—we may be blowing some backend
-developers’ minds right now.
+And to be clear, I’m NOT claiming CSS brought component thinking to
+software—that goes back to IBM in the 60s. Software was well aware of
+components. Also, JS has always borrowed object-oriented ideas since its
+inception. One might claim object-oriented is a form of component.
+
+But nothing in CSS’ spec suggests component thinking, as we just saw. And
+connecting the dots to switch from the top-down approach (layout first, then
+details & tiny elements later) to bottom-up approach (components first;
+layouts are just arrangements of components), this approach led down the
+current path we’ve followed for almost 10 years.
 
 </Notes>
 
@@ -833,28 +841,14 @@ export default DefaultLayout;
   <title>● ● ● ● ○</title>
 </Head>
 
-What a land of opportunity<br />
-for component-oriented CSS!
-
----
-
-export default DefaultLayout;
-
-<Head>
-  <title>● ● ● ● ○</title>
-</Head>
-
 <Image
-  src="https://media.giphy.com/media/uhLKVRBaoAtUs/giphy.gif"
+  src="./assets/spider-man.jpg"
   size="contain"
-  height="40vh"
+  height="60vh"
   width="60vw"
 />
 
-But CSS had a thing or two to learn<br />
-if it wanted to enter JavaScript land.
-
-<Notes>Oh, CSS. You were a prince in your land.</Notes>
+And React shone, until it came to styling
 
 ---
 
@@ -884,8 +878,8 @@ export default DefaultLayout;
   width="60vw"
 />
 
-In the face of JS’ criticism,<br />
-CSS would not give up
+A stranger in this new land,<br />
+CSS would learn this foreign language
 
 ---
 
@@ -912,3 +906,275 @@ A brief history of CSS-in-JS progression
 
 [pace]: http://www.didoo.net/about/
 [css-webpack]: https://github.com/css-modules/webpack-demo/commits/master
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+With CSS-in-JS,<br />
+all the problems were solved! 🎉
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+Just kidding.<br />
+But it’s still pretty great.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+# Component
+
+<SyntaxHighlighter
+  language="jsx"
+  style={monokaiSublime}
+>{`const Button = styled.button\`
+  background-color: #f0f0f0;
+  color: #333;
+\`;
+
+<Button />`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+# Alternates / State
+
+<SyntaxHighlighter
+  language="jsx"
+  style={monokaiSublime}
+>{`const Button = styled.button\`
+  background-color: \${props => props ? '#006dcc' : '#f00f0f0'};
+  color: \${props => props.cta ? '#fff' : '#333'};
+  opacity: \${props => props.disabled ? 0.6 : 1};
+  pointer-events: \${props => props.disabled ? 'not-allowed' : default};
+\`;
+
+<Button>Log in</Button>
+<Button cta disabled>Sign up</Button>`}</SyntaxHighlighter>
+
+<Notes>
+Yes, I guess I did just recreate Twitter Bootstrap in Styled Components 🤷‍♂️
+
+Can you see how far we’ve come in a few short years?
+
+Also, this is such a huge leap forward because we can actually type-check,
+and pass complex values to our CSS in ways we couldn’t before.
+
+Also we didn’t talk about it, but encapsulation is solved. No specificity
+fighting! No name memorization! This is expressive and clear.
+
+</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+And in some ways, it’s simplified things.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<nav class="nav nav__main">
+  <ul class="nav-inner">
+    <li class="nav-item"><a class="nav-link is-active">Home</a></li>
+    <li class="nav-item"><a class="nav-link">Pricing</a></li>
+    <li class="nav-item"><a class="nav-link">Features</a></li>
+  </ul>
+</nav>`}</SyntaxHighlighter>
+
+👇
+
+<SyntaxHighlighter language="html" style={monokaiSublime}>{`<Nav area="main">
+  <NavInner>
+    <NavItem><NavLink isActive>Home</NavLink></NavItem>
+    <NavItem><NavLink>Pricing</NavLink></NavItem>
+    <NavItem><NavLink>Features</NavLink></NavItem>
+  </NavInner>
+</Nav>`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+_Everything’s_ now a component! 🤯<br />
+No more mulling over base/element/organism/scaffolding/whatever.<br />
+(we were overthinking it)
+
+<Notes>
+I kind of skipped over it, because truthfully I don’t remember it all, and no
+one had landed on a system that works.
+
+Now layouts are components, simple elements are components. Heck, even
+complicated orchestration is handled in components. Components are what you
+make them.
+
+</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+# Chapter 5
+
+## The Road Ahead
+
+🛣
+
+<Notes>So what’s left?</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+React ≠ Web standards
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+The major problem with BEM, et al<br />
+was they were built on secret, optional rules.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+React is an optional framework<br />
+That we probably won’t even use in a few years.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+Styled Components only work for React.<br />
+Browsers still need something comparable.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+| Feature                        | Styled Components | Shadow DOM |
+| :----------------------------- | :---------------: | :--------: |
+| Encapsulation (no specificity) |        ✅         |     ✅     |
+| Easy, declarative naming       |        ✅         |     ✅     |
+| Decoupling markup from styling |        ✅         |     🚫     |
+| State management               |        ✅         |     🚫     |
+
+<Notes>
+Shadow DOM just gained Firefox support in 2018 (last year)
+
+It doesn’t check off all the boxes, and in some ways it’s a step back, but
+it’s more boxes than we had checked just a couple years ago.
+
+</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+<Image src="./assets/stencil.png" size="contain" height="60vh" width="60vw" />
+
+Through it all, progress is happening.<br />
+Components are still queen.
+
+<Notes>
+  And Stencil is built on JSX and async rendering from React fiber—neither of
+  which were obviously in the v1 web component spec
+</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+CSS still has to find its place<br />
+in the new dimension of web components.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ● </title>
+</Head>
+
+CSS still has to <strike style={{ opacity: 0.4 }}>find its place</strike><br />
+be dragged kicking and screaming<br />
+into the new dimension of web components<br />
+whether it likes it or not.
+
+---
+
+<Image
+  src="./assets/spider-man-drag.gif"
+  size="contain"
+  height="80vh"
+  width="80vw"
+/>
