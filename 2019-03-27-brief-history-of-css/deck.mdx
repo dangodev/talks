@@ -1,7 +1,7 @@
-import { Head, Image, Notes } from 'mdx-deck'
+import { Head, Image, Notes } from 'mdx-deck';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-export { theme } from './theme'
+export { theme } from './theme';
 import DefaultLayout from './components/Default';
 import Invert from './components/Invert';
 import TitleCard from './components/TitleCard';
@@ -9,9 +9,12 @@ import TitleCard from './components/TitleCard';
 export default TitleCard;
 
 ---
+
 export default Invert;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
 ### Warning
 
@@ -29,9 +32,12 @@ I probably stole ideas from the following people:
 - Dan Denney
 
 ---
+
 export default Invert;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
 ### Warning
 
@@ -39,13 +45,18 @@ I probably also forgot what the previous people said<br/>
 and mixed in my own ideas
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
 # Chapter 1
 
 ## The blue button problem
+
+🖲️
 
 <Notes>
 To illustrate the challenge of why CSS is so hard, I’m going to walk you
@@ -54,27 +65,35 @@ I’ve stolen it from CSS people smarter than me. But I’ve never heard it
 named, so I’m giving it a name and retelling it in my own way.
 
 Say you have a button.
+
 </Notes>
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
-<Image src="./assets/btn-next.png" size="contain" height="20vh" width="100vw" />
+<Image src="./assets/btn-gray.png" size="contain" height="20vh" width="100vw" />
 
 <Notes>
 (describe the button in 4–5 properties)
 
 Not a big deal to style it.
+
 </Notes>
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
-<Image src="./assets/btn-next.png" size="contain" height="20vh" width="100vw" />
+<Image src="./assets/btn-gray.png" size="contain" height="20vh" width="100vw" />
 
 <SyntaxHighlighter language="css" style={monokaiSublime}>{`.btn {
   background-color: #f5f5f5;
@@ -86,34 +105,810 @@ export default DefaultLayout;
 }`}</SyntaxHighlighter>
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
-<Image src="./assets/btn-download.png" size="contain" height="20vh" width="100vw" />
+<Image
+  src="./assets/btn-gray-2.png"
+  size="contain"
+  height="20vh"
+  width="100vw"
+/>
 
-<Notes>
-Encountered another button, same styles. cool.
-</Notes>
+<Notes>Encountered another button, same styles. cool.</Notes>
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
-<Image src="./assets/btn-download.png" size="contain" height="20vh" width="100vw" />
+<Image
+  src="./assets/btn-gray-2.png"
+  size="contain"
+  height="20vh"
+  width="100vw"
+/>
 
-<SyntaxHighlighter language="css" style={monokaiSublime}>{`.btn      😎👍`}</SyntaxHighlighter>
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`.btn      😎👍`}</SyntaxHighlighter>
 
 ---
+
 export default DefaultLayout;
 
-<Head><title>● ○ ○ ○ ○</title></Head>
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
 
 <Image src="./assets/btn-blue.png" size="contain" height="20vh" width="100vw" />
 
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<Image src="./assets/btn-blue.png" size="contain" height="20vh" width="100vw" />
+
+<p>Uh oh.</p>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+I know!<br />
+I’ll make a ✨ CSS Class 🌈<br />
+to override the background color.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<Image src="./assets/btn-blue.png" size="contain" height="20vh" width="100vw" />
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.blue {
+  background-color: #006dcc;
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+}`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<Image src="./assets/btn-blue.png" size="contain" height="20vh" width="100vw" />
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.blue {
+  background-color: #006dcc;
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  color: #fff;
+}`}</SyntaxHighlighter>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn blue" />`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+Done… right?
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+## Nope! Order gon’ getcha
+
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`/* <button class="btn blue"> is 🔵 blue */
+ 
+.btn {}
+.blue {}`}</SyntaxHighlighter>
+
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`/* <button class="btn gray"> is 🐦 gray */
+ 
+.blue {}
+.btn {}`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+Okay…<br />
+If I can’t adjust the order,<br />
+then what about specificity?
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`/* <button class="btn blue"> is 🔵 blue */
+ 
+.btn.blue {}`}</SyntaxHighlighter>
+
+That worked! 🎉
+
+But a new design request came in…
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+All the blue buttons are now CTAs<br />
+and have a slightly bigger text size.
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.btn.blue {
+  font-size: 18px;
+}`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+That worked! Again! 🎉
+
+But a new design request came in…
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<Image src="./assets/navbar.png" size="contain" height="20vh" width="90vw" />
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+<Image src="./assets/navbar.png" size="contain" height="20vh" width="75vw" />
+
+A navbar! Neat!<br />
+But that `.btn.blue` looks smaller 🤔
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+Order again…
+
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`/* Nav button is too big 😞 */
+ 
+.nav .blue {}
+.btn.blue {}
+`}</SyntaxHighlighter>
+
+<SyntaxHighlighter
+  language="css"
+  style={monokaiSublime}
+>{`/* Nav button is sized correctly */
+ 
+.btn.blue {}
+.nav .blue {}
+`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ○ ○ ○ ○</title>
+</Head>
+
+You’ve begun to see a pattern here.
+
 <Notes>
-Uh oh.
+  Naturally, you could just increase the specificity. But that’s what happened
+  last time. We’re only at 2 classes now, which isn’t bad. But when you get to
+  6+ classes to set a style, that’s a headache. And yes, I’ve been there.
 </Notes>
 
 ---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+# Chapter 2
+
+## Thinking atomically small
+
+⚛️
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+It only took 3 CSS classes<br />
+before we had a conflict.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+☮️ Let’s try to not have any conflicts ✌️
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.bg-gray {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+}
+ 
+.bg-blue {
+  background-color: #006dcc;
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+}
+ 
+.font-size-14 {
+  font-size: 14px;
+}
+ 
+.font-size-16 {
+  font-size: 16px;
+}
+`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`.bg-gray {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+}
+ 
+.bg-blue {
+  background-color: #006dcc;
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+}
+ 
+.font-size-14 {
+  font-size: 14px;
+}
+ 
+.font-size-16 {
+  font-size: 16px;
+}
+`}</SyntaxHighlighter>
+
+This _works_, but…
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn bg-gray font-size-14 color-k">Download</button>
+ 
+<button class="btn bg-blue font-size-16 color-w">Sign up</button>
+`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+What’s the difference between…
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn bg-gray font-size-14 color-gray">Download</button>
+ 
+<button class="btn bg-blue font-size-16 color-white">Sign up</button>
+`}</SyntaxHighlighter>
+
+and
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button style="background-color:#f5f5f5;color:#333;font-size:14px;">Download</button>
+ 
+<button class="background-color:#006dcc;color:#fff;font-size:16px;">Sign up</button>
+`}</SyntaxHighlighter>
+
+(not much)
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+This isn’t an intelligent way to deal with the cascade.<br />
+It’s avoiding it entirely.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+<Image
+  src="./assets/atomic.png"
+  size="contain"
+  height="30.72vh"
+  width="40vh"
+  style={{ borderRadius: '12px' }}
+/>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ○ ○ ○</title>
+</Head>
+
+<Image
+  src="./assets/atomic.png"
+  size="contain"
+  height="30.72vh"
+  width="40vh"
+  style={{ borderRadius: '12px' }}
+/>
+
+💩
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+# Chapter 3
+
+## Component thinking
+
+🧱
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+A brief history of component thinking for web
+
+| Name           | Creator(s)      |     Year      | Notes                                                                                                               |
+| :------------- | :-------------- | :-----------: | :------------------------------------------------------------------------------------------------------------------ |
+| BEM            | Yandex          | **2006‑2010** | According to [the site][bem], they claim to have used it internally since 2006. But the public release was in 2010. |
+| OOCSS          | Nicole Sullivan |   **2008**    | According to [Nicole Sullivan][nc], code started in 2004 but first talk was in 2008                                 |
+| Sketch         |                 |   **2010**    | Version 3, introducing Symbols and many other hallmark features, released 2014                                      |
+| SMACSS         | Jonathan Snook  |   **2011**    |                                                                                                                     |
+| Web Components | Alex Russell    |   **2011**    | Introduced at Frontiers Conference in 2011 (Oct 12–15)                                                              |
+| Bootstrap      | Twitter         |   **2011**    | Released Aug 19                                                                                                     |
+| Foundation     | Zurb            |   **2011**    | Released September                                                                                                  |
+
+[bem]: https://en.bem.info/methodology/history/
+[nc]: https://twitter.com/stubbornella/status/1110764425244344320
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+Component thinking changed _everything_ …
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+… even if it wasn’t clear how it fit into CSS
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn blue"> 👉 <button class="btn btn__cta">`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn blue"> 👉 <button class="btn btn__blue">`}</SyntaxHighlighter>
+
+Thinking about it using components first,<br />
+blue becomes more than a descriptor.<br />
+It becomes an alternate version of the same component.
+
+<Notes>
+  You’re probably thinking “duh,” because component thinking is so commonplace
+  now. But it wasn’t back then.
+
+It still might not be obvious to some—we may be blowing some backend
+developers’ minds right now.
+
+</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+But why is it blue?
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn btn__blue"> 👉 <button class="btn btn__cta">`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+<Image src="./assets/btn-blue.png" size="contain" height="20vh" width="75vw" />
+
+<SyntaxHighlighter
+  language="html"
+  style={monokaiSublime}
+>{`<button class="btn btn__blue"> 👉 <button class="btn btn__cta">`}</SyntaxHighlighter>
+
+Its color only distinguishes it as a **call-to-action** (CTA).<br />
+It could be any color.<br />
+(and maybe it will be, eventually)
+
+<Notes>Thinking about what the component does lets us do that.</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+<SyntaxHighlighter language="css" style={monokaiSublime}>{`/* Base */
+.btn {}
+ 
+/* Modifier */
+.btn__cta {}
+ 
+.btn__small {}
+ 
+/* Subcomponents */
+.btn-icon {}
+ 
+.btn-tooltip {}
+ 
+/* State */
+.is-disabled {}
+ 
+.is-active {}
+`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+All the pieces were there, we just had to see it.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+All the pieces were there, we just had to see it.<br />
+
+<p><small>**Component**<br />
+👇<br />
+Alternates (modifiers) • Subcomponents • State</small></p>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+Of course, it didn’t stop there…
+
+<p><small>Block • Element • Layout • Scaffolding • Context<br />
+Theme • Atoms • Molecules • Organisms • Templates • Pages</small></p>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+But the thinking was solid.<br />
+Styling underwent a paradigm shift<br />
+(even if the syntax was sometimes awkward).
+
+<SyntaxHighlighter language="html" style={monokaiSublime}>{`<div class="grid">
+  <div class="grid-col grid-col__6of12-s grid-col__3of12-m"></div>
+  <div class="grid-col grid-col__6of12-s grid-col__3of12-m"></div>
+</div>`}</SyntaxHighlighter>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ○ ○</title>
+</Head>
+
+And then came React.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+# Chapter 4
+
+## CSS comes to the land of JS
+
+🛥️
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+React wasn’t the first JS framework.<br />
+Not by a longshot.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+React was just the first major framework<br />
+to enforce component architecture.
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+What a land of opportunity<br />
+for component-oriented CSS!
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+<Image
+  src="https://media.giphy.com/media/uhLKVRBaoAtUs/giphy.gif"
+  size="contain"
+  height="40vh"
+  width="60vw"
+/>
+
+But CSS had a thing or two to learn<br />
+if it wanted to enter JavaScript land.
+
+<Notes>Oh, CSS. You were a prince in your land.</Notes>
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+<Image
+  src="./assets/react-css-in-js.png"
+  size="contain"
+  height="75vh"
+  width="100vw"
+/>
+
+React: CSS-in-JS (2014)
+
+---
+
+export default DefaultLayout;
+
+<Image
+  src="https://media.giphy.com/media/8xkZhH1ivBdTO/giphy.gif"
+  size="contain"
+  height="40vh"
+  width="60vw"
+/>
+
+In the face of JS’ criticism,<br />
+CSS would not give up
+
+---
+
+export default DefaultLayout;
+
+<Head>
+  <title>● ● ● ● ○</title>
+</Head>
+
+A brief history of CSS-in-JS progression
+
+| Name                | Creator(s)                   | Year | Notes                                            |
+| :------------------ | :--------------------------- | :--: | :----------------------------------------------- |
+| React               | Jordan Walke (Facebook)      | 2013 | Open-sourced in 2013 after years of internal use |
+| React: CSS in JS    | Christopher “vjeaux” Chedeau | 2014 | The slide that started a war                     |
+| CSS Modules         | Sokra?                       | 2015 | Premiered as a [webpack demo][css-webpack]       |
+| PostCSS CSS Modules | Alexander Madyankin          | 2015 |                                                  |
+| Aphrodite           | Emily Eisenberg              | 2015 |                                                  |
+| Radium              | Alex Lande                   | 2015 |                                                  |
+| Styled Components   | Max Stoiber, Glen Maddern    | 2016 |
+| Glamor              | Sunil Pai                    | 2016 |                                                  |
+| Glamorous           | Kent C. Dodds (PayPal)       | 2017 |                                                  |
+| Emotion             | Mitchell Hamilton            | 2017 |                                                  |
+
+[pace]: http://www.didoo.net/about/
+[css-webpack]: https://github.com/css-modules/webpack-demo/commits/master

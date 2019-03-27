@@ -48,6 +48,22 @@ export const theme = {
     listStyle: 'none',
     width: '24em',
   },
+  ol: {
+    fontSize: '28px',
+  },
+  pre: {
+    borderRadius: '8px',
+    fontSize: '28px',
+    minWidth: '50vw',
+  },
+  small: {
+    fontSize: '0.5em',
+  },
+  table: {
+    fontSize: '18px',
+    margin: '0 auto',
+    width: 'calc(100vw - 8rem)',
+  },
   googleFont:
     'https://fonts.googleapis.com/css?family=Oswald|Raleway|Open+Sans|Lato|Montserrat|Merriweather|Roboto|Yanone+Kaffeesatz',
 };
